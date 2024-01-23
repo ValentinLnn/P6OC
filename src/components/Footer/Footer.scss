@@ -1,0 +1,27 @@
+.footer{
+
+    height: 209px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:27px;
+    @media (min-width: 769px) {
+        margin-top:50px;
+    }
+    &_logo {
+        margin-top: 2%;
+        width: 122px;
+        height: 40px;
+      }
+    &_text-copyright {
+        color: white;
+        padding: 29px;
+        font-size: 12px;
+        @media (min-width: 769px) {
+            font-size: 24px;
+        }
+    }
+}

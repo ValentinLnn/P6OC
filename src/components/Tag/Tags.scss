@@ -1,0 +1,18 @@
+.tag-container{
+    display:flex;
+    gap:0.7rem;
+    flex-wrap: wrap;
+    &_button{
+        display: flex;
+        align-items: center;
+        background-color:#FF6060;
+        border-radius: 10px;
+        height: 25px;
+        color:#fff;
+        font-size:10px;
+        padding: 1px 20px;
+        @media (min-width: 769px) {
+            font-size:14px;
+            }
+    }
+}

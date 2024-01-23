@@ -1,0 +1,55 @@
+.banner{
+    border-radius:25px;
+    position:relative;
+    height: 111px;
+    margin-bottom: 22px;
+
+    @media (min-width: 769px) {
+        height: 223px;
+        margin-bottom: 50px;
+    }
+    &_img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    &_text{
+        position:absolute;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        color: white;
+        top: 28.04%;
+        left: 5.6%;
+        right: 32.53%;
+        bottom: 80.05%;
+        width: 217px;
+        height: 48px;
+        @media (min-width: 769px) {
+           top:0;
+           left:0;
+           right:0;
+           display:flex;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+           font-size: 48px;
+           width: 100%;
+           height: 100%;
+           line-height: 68.45px;
+        }
+    }
+    &_shadow{
+        position: absolute;
+        top:0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        @media (min-width: 769px) {
+            border-radius:25px;
+        }
+    }
+}

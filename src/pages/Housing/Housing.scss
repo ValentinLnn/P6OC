@@ -1,0 +1,59 @@
+.housing-display{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 769px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .housing-infos{
+        margin-top: 15px;
+        @media (min-width: 769px) {
+            margin-top: 30px;
+        }
+        p{
+          color:#ff6060;
+          font-size: 14px;
+          line-height: 19.96px;
+          margin-bottom: 10px;
+          @media (min-width: 769px) {
+            font-size: 18px;
+            line-height: 25.67px;
+            margin-bottom: 20px;
+        }  
+        }
+    }
+    .housing-host-infos{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        @media (min-width: 769px) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            gap: 15px;
+            justify-content: flex-start;
+        }
+    }
+}
+.collapse-content{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .collapse-description, .collapse-equipements{
+        display:inherit;
+        width: 100%;
+
+        @media (min-width: 769px) {
+            width: 45%;
+        }
+    }
+
+}
