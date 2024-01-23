@@ -8,7 +8,6 @@ import "./main.scss";
 const App = () => {
   return (
     <HashRouter>
-      <div>
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} /> 
           <Route path="/home" element={<Home />} />
@@ -16,7 +15,6 @@ const App = () => {
           <Route path="/logement/:id" element={<Housing />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </div>
     </HashRouter>
   );
 };
