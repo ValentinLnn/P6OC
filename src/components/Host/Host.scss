@@ -1,12 +1,13 @@
+@import '../../main.scss';
 .info-host{
     display:flex;
     align-items: center;
     .name-host{
-        color:#ff6060;
+        color: $color-secondary;
         font-size: 12px;
         margin-right: 10px;
         text-align: right;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             font-size: 18px;
         }
     }
@@ -15,7 +16,7 @@
             height: 32px;
             object-fit: cover;
             width: 32px;
-            @media (min-width: 769px) {
+            @include breakpoint-small {
                 height:64px;
                 width: 64px;
             }

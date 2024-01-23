@@ -1,10 +1,11 @@
+@import '../../main.scss';
 .banner{
     border-radius:25px;
     position:relative;
     height: 111px;
     margin-bottom: 22px;
 
-    @media (min-width: 769px) {
+    @include breakpoint-small {
         height: 223px;
         margin-bottom: 50px;
     }
@@ -26,14 +27,12 @@
         bottom: 80.05%;
         width: 217px;
         height: 48px;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
            top:0;
            left:0;
            right:0;
-           display:flex;
-           justify-content: center;
+           @include display-flex-centered;
            text-align: center;
-           align-items: center;
            font-size: 48px;
            width: 100%;
            height: 100%;
@@ -48,7 +47,7 @@
         width: 100%;
         height: 100%;
         border-radius: 25px;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             border-radius:25px;
         }
     }

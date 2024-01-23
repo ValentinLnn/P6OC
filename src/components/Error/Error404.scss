@@ -1,37 +1,36 @@
+@import '../../main.scss';
 .error_container{
-    color:#ff6060;
-    display:flex;
+    color: $color-primary;
+    @include display-flex-centered;
     flex-direction: column;
-    justify-content: center;
+
+
     gap:113px;
-    @media screen and (min-width:768px) {
+    @include breakpoint-small {
         gap:39px;
     }
     &_404{
         font-size: 96px;
         font-weight: 700;
-        justify-content: inherit;
-        display: inherit;
-        @media screen and (min-width:768px) {
+        @include display-flex-centered;
+        @include breakpoint-small {
             font-size: 288px;
         }
     }
     &_text{
-        display:inherit;
-        justify-content: inherit;
+        @include display-flex-centered;
         text-align: center;
         font-size: 18px;
-        @media screen and (min-width:768px) {
+        @include breakpoint-small {
             font-size: 36px;
         }
     }
     &_home{
-        color:inherit;
-        display:inherit;
-        justify-content: inherit;
+        color:$color-primary;
+        @include display-flex-centered;
         text-decoration: underline;
         font-size: 14px;
-        @media screen and (min-width:768px) {
+        @include breakpoint-small {
             font-size: 18px;
         }
     }

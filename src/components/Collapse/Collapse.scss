@@ -1,18 +1,16 @@
+@import '../../main.scss';
 .collapse {
-  display: flex;
+  @include display-flex-centered;
   width: 100%;
   margin: 20px 0;
-  justify-content: center;
-  align-items: center;
+
 
   &_all {
-    display: flex;
+    @include display-flex-centered;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @include breakpoint-small {
       width: 80%;
     }
   }
@@ -28,16 +26,16 @@
     align-items: center;
     padding: 0.5em 1em;
     width: 100%;
-    background-color: #ff6060;
+    background-color: $color-primary;
     margin: 0 auto;
     margin-top: 1.5em;
     border-radius: 5px;
 
     h2 {
-      color: white;
+      color: $color-secondary;
       font-size: 20px;
       font-weight: 500;
-      @media screen and (min-width:768px) {
+      @include breakpoint-small {
         font-size: 24px;
         
       }
@@ -56,13 +54,13 @@
     }
   }
   &_content{
-    background-color: #f7f7f7;
+    background-color: $color-tertiary;
     border-radius: 5px;
     font-size:13px;
     margin: 0 auto;
     padding: 18px 20px;
-    color:#ff6060;
-    @media screen and (min-width:768px) {
+    color: $color-primary;
+    @include breakpoint-small {
         font-size: 18px;
         
     }

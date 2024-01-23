@@ -1,15 +1,16 @@
+@import '../../main.scss';
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 20px 27px 20px;
-    @media screen and (min-width: 769px) {
+    @include breakpoint-small {
         margin: 45px 100px 50px 100px;
       }
     &_img{
         img {
             height: 45px;
-            @media screen and (min-width: 769px) {
+            @include breakpoint-small {
                 height: 68px;
             }
         }

@@ -1,6 +1,7 @@
+@import '../../main.scss';
 .stars{
     height:14px;
-    @media (min-width: 769px) {
+    @include breakpoint-small {
         height:24px;
     }
 }

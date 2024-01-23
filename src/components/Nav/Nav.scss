@@ -1,19 +1,20 @@
+@import '../../main.scss';
 .nav-header{
     display: flex;
     justify-content: flex-end;
     text-transform: uppercase;
     font-size: 12px;
-    @media screen and (min-width: 768px){
+    @include breakpoint-small{
         text-transform: none;
         font-size: 24px;
     }
     .nav-header_home-on, .nav-header_about-on{
-        color:#ff6060;
+        color:$color-primary;
         text-decoration: underline;
         margin-left:3rem;
     }
     .nav-header_home-off, .nav-header_about-off{
-        color:#ff6060;
+        color:$color-primary;
         text-decoration: none;
         margin-left:3rem;
         &:hover{

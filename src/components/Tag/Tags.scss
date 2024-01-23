@@ -1,3 +1,4 @@
+@import '../../main.scss';
 .tag-container{
     display:flex;
     gap:0.7rem;
@@ -5,13 +6,13 @@
     &_button{
         display: flex;
         align-items: center;
-        background-color:#FF6060;
+        background-color:$color-primary;
         border-radius: 10px;
         height: 25px;
-        color:#fff;
+        color: $color-secondary;
         font-size:10px;
         padding: 1px 20px;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             font-size:14px;
             }
     }

@@ -1,20 +1,21 @@
+ @import '../../main.scss';
 .Apt_home{
-    @media (min-width: 769px) {
+    @include breakpoint-small {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
         row-gap: 40px;
-        background: #F6F6F6;
+        background: $color-tertiary;
         padding: 50px;
         border-radius: 25px;
         margin-bottom: 40px;
     }
-    @media (min-width: 1183px) {
+    @include breakpoint-large {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 60px;
         row-gap: 50px;
-        background: #F6F6F6;
+        background: $color-tertiary;
         padding: 50px;
         border-radius: 25px;
         margin-bottom: 40px;

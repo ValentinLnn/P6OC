@@ -1,22 +1,23 @@
+@import '../../main.scss';
 .housing-display{
     display: flex;
     flex-direction: column;
-    @media (min-width: 769px) {
+    @include breakpoint-small {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
     .housing-infos{
         margin-top: 15px;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             margin-top: 30px;
         }
         p{
-          color:#ff6060;
+          color: $color-primary;
           font-size: 14px;
           line-height: 19.96px;
           margin-bottom: 10px;
-          @media (min-width: 769px) {
+          @include breakpoint-small {
             font-size: 18px;
             line-height: 25.67px;
             margin-bottom: 20px;
@@ -29,7 +30,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 16px;
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             display: flex;
             flex-direction: column;
             margin-top: 24px;
@@ -42,7 +43,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 769px) {
+    @include breakpoint-small {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -51,7 +52,7 @@
         display:inherit;
         width: 100%;
 
-        @media (min-width: 769px) {
+        @include breakpoint-small {
             width: 45%;
         }
     }
